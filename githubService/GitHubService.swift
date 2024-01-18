@@ -2,6 +2,7 @@ import Foundation
 import RxSwift
 
 class GitHubService{
+    //static 프로퍼티를 사용함으로써 싱글톤 디자인 패턴을 구현
     static let shared = GitHubService()
 
     private let baseURL = "https://api.github.com/search/repositories"
